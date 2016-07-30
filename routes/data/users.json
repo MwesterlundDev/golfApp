@@ -1,0 +1,85 @@
+{
+    "users":[ {
+            "email": "mark.westerlund.dev@gmail.com",
+            "name": "Mark",
+            "friends": [
+                "brianmendicino@gmail.com", 
+                "bneal@gmail.com",
+                "pdurbin@gmail.com",
+                "swesterlund@gmail.com",
+                "dwesterlund@gmail.com",
+                "gwesterlund@gmail.com",
+                "pwesterlund@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "brianmendicino@gmail.com",
+            "name": "Mendo",
+            "friends": [
+                "mark.westerlund.dev@gmail.com",
+                "bneal@gmail.com",
+                "pdurbin@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "bneal@gmail.com",
+            "name": "Brian",
+            "friends": [
+                "brianmendicino@gmail.com", 
+                "mark.westerlund.dev@gmail.com",
+                "pdurbin@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "pdurbin@gmail.com",
+            "name": "PaulD",
+            "friends": [
+                "brianmendicino@gmail.com", 
+                "mark.westerlund.dev@gmail.com",
+                "bneal@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "swesterlund@gmail.com",
+            "name": "Shawn",
+            "friends": [
+                "mark.westerlund.dev@gmail.com",
+                "dwesterlund@gmail.com",
+                "gwesterlund@gmail.com",
+                "pwesterlund@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "dwesterlund@gmail.com",
+            "name": "Dan",
+            "friends": [
+                "mark.westerlund.dev@gmail.com",
+                "swesterlund@gmail.com",
+                "gwesterlund@gmail.com",
+                "pwesterlund@gmail.com"],
+            "image": "?"
+        },{
+            "email": "gwesterlund@gmail.com",
+            "name": "Glenny",
+            "friends": [
+                "mark.westerlund.dev@gmail.com",
+                "dwesterlund@gmail.com",
+                "swesterlund@gmail.com",
+                "pwesterlund@gmail.com"
+                ],
+            "image": "?"
+        },{
+            "email": "pwesterlund@gmail.com",
+            "name": "Packy",
+            "friends": [
+                "mark.westerlund.dev@gmail.com",
+                "dwesterlund@gmail.com",
+                "gwesterlund@gmail.com",
+                "swesterlund@gmail.com"
+                ],
+            "image": "?"
+        }
+
+    ]
+
+}
