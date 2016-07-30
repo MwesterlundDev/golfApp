@@ -1,8 +1,196 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body, html {
+    height: 100%;
 }
+
+body {
+	margin: 0px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+html {
+  font-size:110%;
+} 
+
 
 a {
   color: #00B7FF;
 }
+
+p {
+  font-size:120%;
+  line-height:1.2;
+}
+
+ul {
+  line-height:200%;
+}
+
+#mainWrapper {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  float: left;
+  /*line-height:500%;*/
+  height: 10%;
+  width: 100%;
+  background-color: #456B8C;
+  color: white;
+}
+
+.header-color {
+  background-color: #7295B2;
+  text-align: center;
+  color: white;
+}
+
+#content {
+  position: relative;
+  float: left;
+  height: 65%;
+  width: 100%;
+  overflow-y: scroll;
+}
+#footer {
+  position: relative;
+  float: left;
+  /*line-height:500%;*/
+  width: 100%;
+  height: 25%;
+  background-color: #456B8C;
+  color: white;
+}
+
+.col-header-1 {
+  position: relative;
+  float: left;
+  padding-left: 5%;
+  width: 10%;
+  top: 50%;
+}
+.col-header-2 {
+  position: relative;
+  float: left;
+  width: 20%;
+  padding-left: 15%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  top: 50%;
+}
+.col-header-3 {
+  position: relative;
+  float: left;
+  width: 30%;
+  padding-left: 5%;
+  top: 50%;
+}
+.col-header-4 {
+  padding-right: 5%;
+  position: relative;
+  float: left;
+  width: 10%;
+  top: 50%;  
+}
+
+.col-footer-1,
+.col-footer-2,
+.col-footer-3 {
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  float: left;
+  line-height:300%;
+  width: 100%;
+}
+
+.col-1 {
+  position: relative;
+  float: left;
+  width: 10%;
+  padding-left: 5%;
+}
+.col-2 {
+  position: relative;
+  float: left;
+  width: 35%;
+  padding-left: 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.col-3 {
+  position: relative;
+  float: left;
+  width: 10%;
+  text-align: center;
+}
+.col-4 {
+  position: relative;
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+.col-25 {
+  width: 25%;
+  text-align: center;
+}
+
+.col-33 {
+  width: 33%;
+  text-align: center;
+}
+
+.yardage-red {
+  background-color: red;
+  color: white;
+  padding: 0;
+}
+
+.yardage-blue {
+  background-color: blue;
+  color: white;
+  padding: 0;
+}
+
+.yardage-white {
+  background-color: white;
+  color: black;
+  padding: 0;
+}
+
+.yardage-black {
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+.col-4 > #minus-sign,
+.col-4 > #plus-sign, {
+  float: left;
+  vertical-align:middle;
+}
+
+#minus-sign {
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+#plus-sign {
+  padding-left: 20%;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+
