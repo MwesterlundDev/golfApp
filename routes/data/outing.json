@@ -1,0 +1,633 @@
+{
+	"id": "timestamp?",
+	"course": "grandview",
+	"nines": [
+		"front",
+		"back"
+	],
+	"groups": [
+		[
+			"mark.westerlund.dev@gmail.com",
+			"brianmendicino@gmail.com",
+			"bneal@gmail.com",
+			"pdurbin@gmail.com"
+		],
+		[
+			"swesterlund@gmail.com",
+			"dwesterlund@gmail.com",
+			"gwesterlund@gmail.com",
+			"pwesterlund@gmail.com"
+		]
+	],
+	"rounds": [
+		{
+			"player": "mark.westerlund.dev@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "brianmendicino@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "bneal@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "pdurbin@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "swesterlund@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "dwesterlund@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "gwesterlund@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		},{
+			"player": "pwesterlund@gmail.com",
+			"scorecard": [
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 3,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 4,
+					"plusMinus": 0
+				},
+				{
+					"score": 5,
+					"plusMinus": 0
+				}
+			]
+		}
+	]
+}
