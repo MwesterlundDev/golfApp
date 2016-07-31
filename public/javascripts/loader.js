@@ -26,7 +26,7 @@ function receivedEmail(data) {
     gapp.email = data.email;
     
     // make request to find which page to load.
-    d3.request('/loadGolfApp?email='+gapp.email)
+    d3.request('/loadGolfApp')
         .mimeType("application/json")
         .response(function(xhr) { return JSON.parse(xhr.responseText); })
         .get()
