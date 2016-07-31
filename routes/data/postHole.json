@@ -1,0 +1,28 @@
+{
+    "holeScore": {
+        "number": "2",
+        "nine": "front",
+        "group": [
+            {
+                "email": "mark.westerlund.dev@gmail.com",
+                "par": 4,
+                "plusMinus": 2
+            },
+            {
+                "email": "brianmendicino@gmail.com",
+                "par": 4,
+                "plusMinus": 1
+            },
+            {
+                "email": "bneal@gmail.com",
+                "par": 4,
+                "plusMinus": 4
+            },
+            {
+                "email": "pdurbin@gmail.com",
+                "par": 4,
+                "plusMinus": 4
+            }
+        ]
+    }
+}
