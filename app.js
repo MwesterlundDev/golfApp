@@ -1,23 +1,61 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+const compression = require('compression');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-var app = express();
+const routes = require('./routes/index');
+
+const app = express();
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+const debugGapp = true;
+
+
+// TODO: add passport authentication to google and facebook
+// SIMPLE MIDDLEWARE TO DECIDE IF USER IS AUTHENTICATED
+app.use(function (req, res, next) {
+  if (debugGapp) {
+    console.log('Time:', Date.now());  
+  }
+
+  const isAuthenticated = true;
+
+  if (isAuthenticated) {
+    next();
+  } else {
+    res.sendFile('login.html', { root: __dirname });
+  }
+
+});
+
+
+
+
+
+// default GET to return index template
+app.get('/', function(req, res, next) {
+  res.sendFile('index.html', { root: __dirname });
+});
+
+
+
+
 app.use('/', routes);
+
+
 
 
 
