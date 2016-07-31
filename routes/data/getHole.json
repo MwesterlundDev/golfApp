@@ -3,23 +3,23 @@
         "number": "2",
         "group": [
             {
-                "user": "mark.westerlund.dev@gmail.com",
-                "color": "silver",
+                "user": "Brian Mendicino",
+                "color": "blue",
                 "par": 4
             },
             {
-                "user": "brianmendicino@gmail.com",
-                "color": "silver",
+                "user": "Mark Westerland",
+                "color": "blue",
                 "par": 4
             },
             {
-                "user": "bneal@gmail.com",
-                "color": "silver",
-                "par": 4
+                "user": "Brian Neal",
+                "color": "red",
+                "par": 3
             },
             {
-                "user": "pdurbin@gmail.com",
-                "color": "silver",
+                "user": "Paul Durbin",
+                "color": "blue",
                 "par": 4
             }
         ],
@@ -31,70 +31,70 @@
                 "handicap": 7
             },
             {
-                "color": "silver",
+                "color": "blue",
                 "par": 4,
                 "yardage": 347,
                 "handicap": 7
             },
             {
-                "color": "gold",
+                "color": "white",
                 "par": 4,
                 "yardage": 318,
                 "handicap": 7
             },
             {
-                "color": "copper",
-                "par": 4,
+                "color": "red",
+                "par": 3,
                 "yardage": 270,
-                "handicap": 7
+                "handicap": 5
             }
         ]
     },
     "nextHole": {
-        "number": "2",
+        "number": "3",
         "group": [
             {
-                "user": "mark.westerlund.dev@gmail.com",
-                "color": "silver",
+                "user": "Brian Mendicino",
+                "color": "blue",
+                "par": 5
+            },
+            {
+                "user": "Mark Westerland",
+                "color": "blue",
+                "par": 5
+            },
+            {
+                "user": "Brian Neal",
+                "color": "red",
                 "par": 4
             },
             {
-                "user": "brianmendicino@gmail.com",
-                "color": "silver",
-                "par": 4
-            },
-            {
-                "user": "bneal@gmail.com",
-                "color": "silver",
-                "par": 4
-            },
-            {
-                "user": "pdurbin@gmail.com",
-                "color": "silver",
-                "par": 4
+                "user": "Paul Durbin",
+                "color": "blue",
+                "par": 5
             }
         ],
         "tees": [
             {
                 "color": "black",
-                "par": 4,
+                "par": 5,
                 "yardage": 402,
-                "handicap": 7
+                "handicap": 3
             },
             {
-                "color": "silver",
-                "par": 4,
+                "color": "blue",
+                "par": 5,
                 "yardage": 347,
-                "handicap": 7
+                "handicap": 3
             },
             {
-                "color": "gold",
-                "par": 4,
+                "color": "white",
+                "par": 5,
                 "yardage": 318,
-                "handicap": 7
+                "handicap": 3
             },
             {
-                "color": "copper",
+                "color": "red",
                 "par": 4,
                 "yardage": 270,
                 "handicap": 7

@@ -18,6 +18,7 @@ gapp.scorecard = (function() {
         if (debug) {
             console.log('loading scorecard', obj.data);
         }
+        const data = obj.data;
         
         var contentDiv = d3.select('#content');
         contentDiv.select('#hole-info').remove();
@@ -30,16 +31,13 @@ gapp.scorecard = (function() {
         var holeNav = holeInfo.append('div')
             .classed('row row-50 center-text', true)
         holeNav.append('div')
-            .classed('col col-25 block-of-text', true)
+            .classed('col col-33 block-of-text', true)
             .append('div').text('Prev');
         holeNav.append('div')
-            .classed('col col-25 block-of-text', true)
-            .append('div').text('Hole 1');
+            .classed('col col-33 block-of-text', true)
+            .append('div').text('Hole ' + data.hole.number);
         holeNav.append('div')
-            .classed('col col-25 block-of-text', true)
-            .append('div').text('Par 4');
-        holeNav.append('div')
-            .classed('col col-25 block-of-text', true)
+            .classed('col col-33 block-of-text', true)
             .append('div').text('Next');
 
         var yardage = holeInfo.append('div')
@@ -49,19 +47,15 @@ gapp.scorecard = (function() {
             .append('div').text('Yardages');
 
         var yardageRow = yardage.append('div')
-            .classed('row row-50', true);
-        yardageRow.append('div')
-            .classed('col col-25 yardage-red block-of-text', true)
-            .append('div').text(180);
-        yardageRow.append('div')
-            .classed('col col-25 yardage-blue block-of-text', true)
-            .append('div').text(260);
-        yardageRow.append('div')
-            .classed('col col-25 yardage-whit block-of-text', true)
-            .append('div').text(290);
-        yardageRow.append('div')
-            .classed('col col-25 yardage-black block-of-text', true)
-            .append('div').text(320);
+            .classed('row row-50', true)
+            .attr('id', 'yardage-info');
+
+        // Yardage scorecard data
+        var yardageCol = yardageRow.selectAll('.col').data(obj.data.hole.tees);
+
+        yardageCol.enter().append('div')
+            .attr('class', function(d) { return 'col col-25 block-of-text yardage-'+ d.color; })
+            .append('div').text(function(d) { return d.yardage; });
 
         // PLAYER INFO 70 PERCENT
         var scorecardInfo = contentDiv.append('div')
@@ -82,90 +76,24 @@ gapp.scorecard = (function() {
         scorecardHeader.append('div')
             .classed('col col-30 block-of-text', true)
             .append('div').text('Plus/Minus');
+        
+        // PLayer scorecard data
+        var playerInfo = scorecardInfo.selectAll('.row.row-20.center-text').data(obj.data.hole.group);
 
-        var playerInfo = scorecardInfo.append('div')
+        var payerInfoRow = playerInfo.enter().append('div')
             .classed('row row-20 center-text', true)
-         playerInfo.append('div')
+        payerInfoRow.append('div')
             .classed('col col-15 block-of-text', true)
             .append('div').text('Logo');
-        playerInfo.append('div')
-            .classed('col col-35 block-of-text', true)
+        payerInfoRow.append('div')
+            .attr('class', function(d) { return 'col col-35 block-of-text yardage-' + d.color; })
             .append('div')
             .classed('ellipsis', true)
-            .text('Brian Mendicino');
-        playerInfo.append('div')
+            .text(function(d) { return d.user });
+        payerInfoRow.append('div')
             .classed('col col-15 block-of-text', true)
-            .append('div').text('4');
-        var plusMinus = playerInfo.append('div')
-            .classed('col col-30 block-of-text', true)
-            .append('div');
-        plusMinus.append('img')
-            .attr('id', 'minus-sign')
-            .attr('src', 'images/minus.png');
-        plusMinus.append('img')
-            .attr('id', 'plus-sign')
-            .attr('src', 'images/add.png');
-        
-        playerInfo = scorecardInfo.append('div')
-            .classed('row row-20 center-text', true)
-         playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('Logo');
-        playerInfo.append('div')
-            .classed('col col-35 block-of-text', true)
-            .append('div')
-            .classed('ellipsis', true)
-            .text('Mark Westerlund');
-        playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('4');
-        plusMinus = playerInfo.append('div')
-            .classed('col col-30 block-of-text', true)
-            .append('div');
-        plusMinus.append('img')
-            .attr('id', 'minus-sign')
-            .attr('src', 'images/minus.png');
-        plusMinus.append('img')
-            .attr('id', 'plus-sign')
-            .attr('src', 'images/add.png');
-        
-        playerInfo = scorecardInfo.append('div')
-            .classed('row row-20 center-text', true)
-         playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('Logo');
-        playerInfo.append('div')
-            .classed('col col-35 block-of-text', true)
-            .append('div')
-            .classed('ellipsis', true)
-            .text('Paul Durbin');
-        playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('4');
-        plusMinus = playerInfo.append('div')
-            .classed('col col-30 block-of-text', true)
-            .append('div');
-        plusMinus.append('img')
-            .attr('id', 'minus-sign')
-            .attr('src', 'images/minus.png');
-        plusMinus.append('img')
-            .attr('id', 'plus-sign')
-            .attr('src', 'images/add.png');
-        
-        playerInfo = scorecardInfo.append('div')
-            .classed('row row-20 center-text', true)
-         playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('Logo');
-        playerInfo.append('div')
-            .classed('col col-35 block-of-text', true)
-            .append('div')
-            .classed('ellipsis', true)
-            .text('Brian Neal');
-        playerInfo.append('div')
-            .classed('col col-15 block-of-text', true)
-            .append('div').text('4');
-        plusMinus = playerInfo.append('div')
+            .append('div').text(function(d) { return d.par });
+        var plusMinus = payerInfoRow.append('div')
             .classed('col col-30 block-of-text', true)
             .append('div');
         plusMinus.append('img')
@@ -183,21 +111,16 @@ gapp.scorecard = (function() {
         handicapInfo.append('div')
             .classed('row row-50 header-footer-label center-text block-of-text', true)
             .append('div').text('Handicaps');
-        
+
         var handicapScores = handicapInfo.append('div')
             .classed('row row-50 center-text', true)
-         handicapScores.append('div')
-            .classed('col col-25 yardage-red block-of-text', true)
-            .append('div').text('14');
-         handicapScores.append('div')
-            .classed('col col-25 yardage-blue block-of-text', true)
-            .append('div').text('14');
-         handicapScores.append('div')
-            .classed('col col-25 yardage-white block-of-text', true)
-            .append('div').text('13');
-         handicapScores.append('div')
-            .classed('col col-25 yardage-black block-of-text', true)
-            .append('div').text('14');
+
+        // Handicap scorecard data
+        var handicapCol = handicapScores.selectAll('.col').data(obj.data.hole.tees);
+
+         handicapCol.enter().append('div')
+            .attr('class', function(d) { return 'col col-25 block-of-text yardage-'+ d.color; })
+            .append('div').text(function(d) { return d.handicap; });
     };
 
     return {
