@@ -55,6 +55,9 @@ ul {
 .row-60 {
   height: 60%;
 }
+.row-70 {
+  height: 70%;
+}
 .row-80 {
   height: 80%;
 }
@@ -105,6 +108,9 @@ ul {
 .padding-left-5 {
   padding-left: 5%;
 }
+.padding-left-10 {
+  padding-left: 10%;
+}
 
 .block-of-text div {
   position: relative;
@@ -127,6 +133,7 @@ ul {
   float: left;
   height: 100%;
   width: 100%;
+  font-size: 1em;
 }
 
 #header {
@@ -187,12 +194,12 @@ ul {
 
 #minus-sign {
   position: relative;
-  height: 1em;
-  width: 1em;
+  height: 1.5em;
+  width: 1.5em;
 }
 #plus-sign {
-  padding-left: 20%;
+  margin-left: 20%;
   position: relative;
-  height: 1em;
-  width: 1em;
+  height: 1.5em;
+  width: 1.5em;
 }
