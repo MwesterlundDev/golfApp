@@ -1,0 +1,104 @@
+{
+    "hole": {
+        "number": "2",
+        "group": [
+            {
+                "user": "mark.westerlund.dev@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "brianmendicino@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "bneal@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "pdurbin@gmail.com",
+                "color": "silver",
+                "par": 4
+            }
+        ],
+        "tees": [
+            {
+                "color": "black",
+                "par": 4,
+                "yardage": 402,
+                "handicap": 7
+            },
+            {
+                "color": "silver",
+                "par": 4,
+                "yardage": 347,
+                "handicap": 7
+            },
+            {
+                "color": "gold",
+                "par": 4,
+                "yardage": 318,
+                "handicap": 7
+            },
+            {
+                "color": "copper",
+                "par": 4,
+                "yardage": 270,
+                "handicap": 7
+            }
+        ]
+    },
+    "nextHole": {
+        "number": "2",
+        "group": [
+            {
+                "user": "mark.westerlund.dev@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "brianmendicino@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "bneal@gmail.com",
+                "color": "silver",
+                "par": 4
+            },
+            {
+                "user": "pdurbin@gmail.com",
+                "color": "silver",
+                "par": 4
+            }
+        ],
+        "tees": [
+            {
+                "color": "black",
+                "par": 4,
+                "yardage": 402,
+                "handicap": 7
+            },
+            {
+                "color": "silver",
+                "par": 4,
+                "yardage": 347,
+                "handicap": 7
+            },
+            {
+                "color": "gold",
+                "par": 4,
+                "yardage": 318,
+                "handicap": 7
+            },
+            {
+                "color": "copper",
+                "par": 4,
+                "yardage": 270,
+                "handicap": 7
+            }
+        ]
+    }
+}
