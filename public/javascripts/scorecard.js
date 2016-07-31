@@ -69,7 +69,7 @@ gapp.scorecard = (function() {
             .attr('id', 'scorecard-info');
 
         var scorecardHeader = scorecardInfo.append('div')
-            .classed('row row-10 header-footer-label center-text padding-left-5', true)
+            .classed('row row-10 header-footer-label center-text', true)
         scorecardHeader.append('div')
             .classed('col col-15 block-of-text', true)
             .append('div').text('Logo');
@@ -115,7 +115,7 @@ gapp.scorecard = (function() {
             .classed('col col-35 block-of-text', true)
             .append('div')
             .classed('ellipsis', true)
-            .text('Brian Mendicino');
+            .text('Mark Westerlund');
         playerInfo.append('div')
             .classed('col col-15 block-of-text', true)
             .append('div').text('4');
@@ -138,7 +138,7 @@ gapp.scorecard = (function() {
             .classed('col col-35 block-of-text', true)
             .append('div')
             .classed('ellipsis', true)
-            .text('Brian Mendicino');
+            .text('Paul Durbin');
         playerInfo.append('div')
             .classed('col col-15 block-of-text', true)
             .append('div').text('4');
@@ -161,7 +161,7 @@ gapp.scorecard = (function() {
             .classed('col col-35 block-of-text', true)
             .append('div')
             .classed('ellipsis', true)
-            .text('Brian Mendicino');
+            .text('Brian Neal');
         playerInfo.append('div')
             .classed('col col-15 block-of-text', true)
             .append('div').text('4');
