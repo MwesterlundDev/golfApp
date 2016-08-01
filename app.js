@@ -32,7 +32,6 @@ const authPassport = require('./routes/auth/passport')(app, passport);
 
 // route to login or home page
 app.get('/', function(req, res, next) {
-  console.log('fwewfwrgerwgergregregregergregregreg', req.isAuthenticated())
     if (req.isAuthenticated()) {
         res.sendFile('index.html', { root: __dirname });
     } else {

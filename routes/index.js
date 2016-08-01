@@ -6,26 +6,29 @@ const users = require("./data/users");
 const outing = require("./data/outing");
 const getHole = require("./data/getHole");
 
-const debugGapp = true;
-
-var email = '';
+const debug = true;
 
 // route middleware to make sure a user is logged in
 const ensureAuthenticated = (req, res, next) => {
-    console.log('ensureAuthenticated:', req.isAuthenticated())
+    if (debug) {
+      console.log('ensureAuthenticated:', req.isAuthenticated())
+    }
     if (req.isAuthenticated()) { return next(); }
     res.redirect('/')
 }
 
 router.route('/gappemail').get(function(req, res, next) {
-  //email = req.user.email;
-  email = 'brianmendicino@gmail.com';
+  const email = req.user.email;
+  if (debug) {
+    console.log('gappemail',email);
+  }
   res.send({'email': email});
 });
 
 
 router.route('/loadGolfApp').get(function(req, res, next) {
-  if (debugGapp) {
+  const email = req.user.email;
+  if (debug) {
     console.log('loading...', email);
   }
   

@@ -38,9 +38,7 @@ module.exports = function(app, passport) {
 
     // used to deserialize the user
     passport.deserializeUser(function(id, done) {
-        console.log('deserializeUser',id);
         findUserByEmail(id, function (err, user) {
-            console.log('deserializeUser',user);
             done(err, user);
         });
         /*
@@ -65,20 +63,24 @@ module.exports = function(app, passport) {
         // make the code asynchronous
         // User.findOne won't fire until we have all our data back from Google
         process.nextTick(function() {
-            console.log('logged in', profile);
             findUserByEmail(profile.id, function(err, user) {
 				if (err) {
 					return done(err);
 				}
-				//console.log(user)
+                
 				if (!user) {
 					console.log("AUTO REGISTRATION")
-					// "Auto-registration"
-					users.push(profile);
-					app.locals.usersTokens.push({email: profile.id, token: accessToken});
+                    var prof = {
+                        id: profile.id,
+                        accessToken: accessToken,
+                        name: profile.displayName,
+                        email: profile.emails[0].value
+                    }
+					users.push(prof);
+					app.locals.usersTokens.push({email: profile.emails[0].value, token: accessToken});
 					return done(null, profile);
 				}
-				//user.accessToken = accessToken;
+                
 				console.log("ALREADY REGISTERED")
 				return done(null, user);
 			});
