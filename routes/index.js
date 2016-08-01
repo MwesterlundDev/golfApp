@@ -4,34 +4,38 @@ const router = express.Router();
 const course = require("./data/course");
 const users = require("./data/users");
 const outing = require("./data/outing");
+const getHole = require("./data/getHole");
 
 const debugGapp = true;
 
 var email = '';
 
-router.route('/gappemail').get(function(req, res, next) {
-  email = 'brianmendicino@gmail.com';
+// route middleware to make sure a user is logged in
+const ensureAuthenticated = (req, res, next) => {
+    console.log('ensureAuthenticated:', req.isAuthenticated())
+    if (req.isAuthenticated()) { return next(); }
+    res.redirect('/')
+}
 
-  //stub course 
+router.route('/gappemail').get(function(req, res, next) {
+  //email = req.user.email;
+  email = 'brianmendicino@gmail.com';
   res.send({'email': email});
 });
 
 
 router.route('/loadGolfApp').get(function(req, res, next) {
-  const email = req.query.email;
-
   if (debugGapp) {
     console.log('loading...', email);
   }
   
-
   // check for pending outing that user is in.
   const isInOuting = true;
   const page = isInOuting ? 'scorecard' : 'home';
 
   const data = {
     'page': page,
-    'json': outing
+    'json': getHole
   }
   //stub course 
   res.send(data);
