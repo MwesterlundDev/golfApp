@@ -1,6 +1,7 @@
 
-// var FacebookStrategy = require('passport-facebook').Strategy;
-var GoogleStrategy = require('passport-google-oauth20').Strategy;
+
+const FacebookStrategy = require('passport-facebook').Strategy;
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 // load up the user model
 //var User = require('../app/models/user');
@@ -69,7 +70,7 @@ module.exports = function(app, passport) {
 				}
                 
 				if (!user) {
-					console.log("AUTO REGISTRATION")
+					console.log("AUTO GOOGLE REGISTRATION")
                     var prof = {
                         id: profile.id,
                         accessToken: accessToken,
@@ -81,7 +82,7 @@ module.exports = function(app, passport) {
 					return done(null, profile);
 				}
                 
-				console.log("ALREADY REGISTERED")
+				console.log("ALREADY GOOGLE REGISTERED")
 				return done(null, user);
 			});
             /*
@@ -107,8 +108,62 @@ module.exports = function(app, passport) {
 
 
 
-    // code for facebook (use('facebook', new FacebookStrategy))
-    // facebook routes
+    // =========================================================================
+    // FACEBOOK ================================================================
+    // =========================================================================
+    passport.use(new FacebookStrategy({
+
+        // pull in our app id and secret from our auth.js file
+        clientID        : config.facebookAuth.clientID,
+        clientSecret    : config.facebookAuth.clientSecret,
+        callbackURL     : config.facebookAuth.callbackURL,
+        profileFields: ['id', 'displayName', 'photos', 'email']
+
+    },
+
+    // facebook will send back the token and profile
+    function(accessToken, refreshToken, profile, done) {
+
+        // asynchronous
+        process.nextTick(function() {
+            findUserByEmail(profile.id, function(err, user) {
+                if (err) {
+                        return done(err);
+                    }
+                    console.log(profile)
+                    if (!user) {
+                        console.log("AUTO FACEBOOK REGISTRATION")
+                        var prof = {
+                            id: profile.id,
+                            accessToken: accessToken,
+                            name: profile.displayName,
+                            email: profile.emails[0].value
+                        }
+                        users.push(prof);
+                        app.locals.usersTokens.push({email: profile.emails[0].value, token: accessToken});
+                        return done(null, profile);
+                    }
+                    
+                    console.log("ALREADY FACEBOOK REGISTERED")
+                    return done(null, user);
+                });
+            /*
+            User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+                return done(err, user);
+            });
+            */
+        })
+    }));
+
+    // route for facebook authentication and login
+    app.get('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
+
+    // handle the callback after facebook has authenticated the user
+    app.get('/auth/facebook/callback',
+        passport.authenticate('facebook', {
+            successRedirect : '/',
+            failureRedirect : '/'
+        }));
 
 
     /*
